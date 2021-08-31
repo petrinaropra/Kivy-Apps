@@ -1,0 +1,32 @@
+<MyLayout>:
+	permission: permission
+	okay: okay
+	line1: line_input
+	line2: line1_input
+	line3: line2_input
+	
+	BoxLayout:
+		orientation: "vertical"
+		size: root.width, root.height
+		
+		Label:
+			id: permission
+			
+		Button:
+			id: okay
+			text: 'Okay'
+			on_press: root.press()
+			
+		TextInput:
+			id: line_input
+			
+		TextInput:
+			id: line1_input
+			
+		TextInput:
+			id: line2_input
+			
+		Button:
+			id: saving
+			text: 'Save'
+			on_press: root.save(line_input.text, line1_input.text, line2_input.text)

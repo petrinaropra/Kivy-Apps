@@ -1,0 +1,36 @@
+<MyBoxLayout>:
+	greeting: greeting
+	answer: answer
+	lives: lives
+	answer1: answer1
+	computer: computer
+	answer2: answer2
+	summary: summary
+	BoxLayout:
+		orientation: "vertical"
+		size: root.width, root.height
+		
+		Label:
+			id: greeting
+			
+		TextInput:
+			id: answer
+			
+		Label:
+			id: lives
+			
+		TextInput: 
+			id: answer1
+			
+		Label:
+			id: computer
+			
+		TextInput:
+			id: answer2
+			
+		Label:
+			id: summary
+			
+		Button:
+			text: "Okay"
+			on_press: root.press()
